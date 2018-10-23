@@ -126,7 +126,7 @@ void key_value_test( void ){
     for( i = 0; i < 21111; i++ ){
         if( set_key_value( "key_value_test", UINT32, ( uint8_t * )( &i )) ){
             if( get_key_value( "key_value_test", UINT32, ( uint8_t * )( &j )) && j == i ){
-                log_d( "%d\r\n", j );
+                elog_d( "UINT32", "%d\r\n", j );
             }else{
                 while( flag );
             }
@@ -144,7 +144,7 @@ void key_value_test( void ){
             if( get_key_value( "my_string_test", STRINGS, (uint8_t *)(&test_string) ) ){
                 volatile uint32_t test  = atoi( (char *)test_string );
                 if( test == i ){
-                    log_d( "%s", (( uint8_t * )test_string) );
+                    elog_d( "STRINGS", "%s", (( uint8_t * )test_string) );
                 }else{
                     while( flag );
                 }
