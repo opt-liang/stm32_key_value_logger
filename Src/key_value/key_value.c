@@ -123,7 +123,7 @@ void key_value_test( void ){
     volatile uint16_t test_mode = 0x00;
     uint32_t i = 0;
     uint32_t j = 0;
-    for( i = 0; i < 21111; i++ ){
+    for( i = 0; i < 2111; i++ ){
         if( set_key_value( "key_value_test", UINT32, ( uint8_t * )( &i )) ){
             if( get_key_value( "key_value_test", UINT32, ( uint8_t * )( &j )) && j == i ){
                 elog_d( "UINT32", "%d\r\n", j );
@@ -137,7 +137,7 @@ void key_value_test( void ){
 
     uint32_t test_string = 0;
     uint8_t my_string_test[ 16 ] = "";
-    for( uint32_t i = 0; i < 21111; i++ ){
+    for( uint32_t i = 0; i < 2111; i++ ){
         memset( my_string_test, 0, 16 );
         sprintf( (char *)my_string_test, "%d\r\n", i );
         if( set_key_value( "my_string_test", STRINGS, my_string_test ) ){

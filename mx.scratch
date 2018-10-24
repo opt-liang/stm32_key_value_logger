@@ -35,7 +35,7 @@
     <usedDebug>true</usedDebug>
     	<debugprobe></debugprobe>
     <optimization></optimization>
-    <icfloc>1</icfloc>
+    <icfloc>0</icfloc>
     <Adefines>
         <define></define>
     </Adefines>   
@@ -115,6 +115,12 @@
 							<name>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c</name>
 						</file>
 						<file>
+							<name>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c</name>
+						</file>
+						<file>
+							<name>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c</name>
+						</file>
+						<file>
 							<name>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c</name>
 						</file>
 						<file>
@@ -169,6 +175,10 @@
 
                                 <file>
                                  <name>..\Src\freertos.c</name>
+                                </file>
+
+                                <file>
+                                 <name>..\Src\spi.c</name>
                                 </file>
 
                                 <file>

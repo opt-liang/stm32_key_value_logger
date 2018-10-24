@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;..\Src\key_value;..\Src\easy_log\inc;..\Src\easy_log\inc</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;..\Src\key_value;..\Src\easy_log\inc;..\Src\easy_log\inc;..\Src\flash</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -461,6 +461,16 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f1xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal_spi_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -541,6 +551,11 @@
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
             </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/spi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -572,11 +587,6 @@
               <FilePath>..\Src\easy_log\src\elog.c</FilePath>
             </File>
             <File>
-              <FileName>elog_async.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\easy_log\src\elog_async.c</FilePath>
-            </File>
-            <File>
               <FileName>elog_buf.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\easy_log\src\elog_buf.c</FilePath>
@@ -590,6 +600,26 @@
               <FileName>elog_port.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\easy_log\port\elog_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>elog_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\easy_log\src\elog_app.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>spi_flash</GroupName>
+          <Files>
+            <File>
+              <FileName>spi_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\flash\spi_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi_flash_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\flash\spi_flash_app.c</FilePath>
             </File>
           </Files>
         </Group>

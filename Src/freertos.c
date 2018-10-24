@@ -141,11 +141,18 @@ void StartDefaultTask(void const * argument)
 {
 
   /* USER CODE BEGIN StartDefaultTask */
+  void elog_app_init( void );
+  elog_app_init();
   key_value_test();
+  elog_flush();
+  osDelay(5000);
   /* Infinite loop */
   for(;;)
   {
-    osDelay(100);
+    void elog_show( void );
+    elog_show();
+    osDelay(10000);
+      
   }
   /* USER CODE END StartDefaultTask */
 }

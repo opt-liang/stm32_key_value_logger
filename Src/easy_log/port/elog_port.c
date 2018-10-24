@@ -50,6 +50,8 @@ void elog_port_output(const char *log, size_t size) {
 //    printf("%.*s", size, log);
     //TODO output to flash
     //key_value location
+    void elog_write( const char* log, uint16_t size );
+    elog_write( log, size );
 }
 
 /**

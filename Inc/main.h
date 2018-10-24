@@ -59,6 +59,11 @@
 
 /* Private define ------------------------------------------------------------*/
 
+#define FLASH_CS_Pin GPIO_PIN_4
+#define FLASH_CS_GPIO_Port GPIOA
+#define FLASH_WP_Pin GPIO_PIN_8
+#define FLASH_WP_GPIO_Port GPIOA
+
 /* ########################## Assert Selection ############################## */
 /**
   * @brief Uncomment the line below to expanse the "assert_param" macro in the 
