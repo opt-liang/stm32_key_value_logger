@@ -106,6 +106,8 @@ void MX_FREERTOS_Init(void) {
         elog_start();
         /* set EasyLogger assert hook */
         /* test logger output */
+        void elog_buff_flush( void );
+        elog_buff_flush();
     //        elog_flash_clean();
     }
   /* USER CODE END Init */
